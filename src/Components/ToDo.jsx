@@ -48,6 +48,7 @@ function ToDo() {
             <button className='add-btn' onClick={addTask}>Add task</button>
         </div>
 
+        <div className='tasksContainer'>
         <ol>
             {tasks.map((task,index) => 
                 <li key={index}><span className='text' >{`${index+1}. ${task}`}</span>
@@ -57,6 +58,7 @@ function ToDo() {
                 </li>
             )}
         </ol>
+        </div>
     </div>
   )
 }
